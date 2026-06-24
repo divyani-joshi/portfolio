@@ -380,9 +380,9 @@ useEffect(() => {
           <span className="font-label-caps text-label-caps text-primary tracking-widest uppercase">Portfolio</span>
           <h2 className="font-display-lg text-display-lg">Featured Projects</h2>
         </div>
-        <div className="hidden md:block">
+        {/* <div className="hidden md:block">
           <a className="text-primary hover:underline flex items-center gap-2" href="#">View all work <span className="material-symbols-outlined">trending_flat</span></a>
-        </div>
+        </div> */}
       </div>
       <div className="grid gap-16">
         {/* EthniWear Rental */}
