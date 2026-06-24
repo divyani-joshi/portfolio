@@ -533,23 +533,25 @@ useEffect(() => {
             I'm currently available for freelance opportunities and long-term collaborations. If you have a project in mind or just want to say hi, feel free to reach out!
           </p>
           <div className="space-y-6 pt-4">
-            <a className="flex items-center gap-4 group" href="mailto:hello@divyanijoshi.dev">
+            <a className="flex items-center gap-4 group" href="divyanijoshi577@gmail.com">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined">mail</span>
               </div>
-              <span className="font-body-lg text-body-lg">hello@divyanijoshi.dev</span>
+              <span className="font-body-lg text-body-lg">divyanijoshi577@gmail.com</span>
             </a>
-            <a className="flex items-center gap-4 group" href="#">
+            <a className="flex items-center gap-4 group" href="www.linkedin.com/in/divyani-joshi-dev
+
+">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined">link</span>
               </div>
-              <span className="font-body-lg text-body-lg">linkedin.com/in/divyanijoshi</span>
+              <span className="font-body-lg text-body-lg">linkedin.com/in/divyani-joshi-dev</span>
             </a>
             <div className="flex items-center gap-4 group">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined">location_on</span>
               </div>
-              <span className="font-body-lg text-body-lg">Remote / Worldwide</span>
+              <span className="font-body-lg text-body-lg">Ahmedabad, Gujarat</span>
             </div>
           </div>
         </div>
