@@ -28,7 +28,45 @@ const [feedbacks, setFeedbacks] = useState([]);
 const [rating, setRating] = useState(0);
 const [mobileMenu, setMobileMenu] = useState(false);
 
+const [contactData, setContactData] = useState({
+  name: "",
+  email: "",
+  subject: "",
+  message: "",
+});
+const AddContact = async (e) => {
+  e.preventDefault();
 
+  try {
+    let response = await fetch(
+      "https://portfolio-ga6t.onrender.com/addcontact",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(contactData),
+      }
+    );
+
+    let data = await response.json();
+
+    if (data.success) {
+      alert("Message Sent Successfully");
+
+      setContactData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    } else {
+      alert(data.message);
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
 const [formData, setFormData] = useState({
   name: "",
   rating,
@@ -601,24 +639,68 @@ useEffect(() => {
 </div>
         </div>
         <div className="glass-card p-8 rounded-3xl">
-          <form className="space-y-6">
+          <form className="space-y-6" onSubmit={AddContact}>
             <div className="grid grid-cols-2 gap-6">
               <div className="space-y-2">
                 <label className="font-label-caps text-on-surface-variant">Name</label>
-                <input className="w-full bg-white/5 border border-white/10 rounded-lg p-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="John Doe" type="text" />
+              <input
+  type="text"
+  value={contactData.name}
+  onChange={(e) =>
+    setContactData({
+      ...contactData,
+      name: e.target.value,
+    })
+  }
+  className="w-full bg-white/5 border border-white/10 rounded-lg p-4"
+  placeholder="John Doe"
+/>
               </div>
               <div className="space-y-2">
                 <label className="font-label-caps text-on-surface-variant">Email</label>
-                <input className="w-full bg-white/5 border border-white/10 rounded-lg p-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="john@example.com" type="email" />
+               <input
+  type="email"
+  value={contactData.email}
+  onChange={(e) =>
+    setContactData({
+      ...contactData,
+      email: e.target.value,
+    })
+  }
+  className="w-full bg-white/5 border border-white/10 rounded-lg p-4"
+  placeholder="john@example.com"
+/>
               </div>
             </div>
             <div className="space-y-2">
               <label className="font-label-caps text-on-surface-variant">Subject</label>
-              <input className="w-full bg-white/5 border border-white/10 rounded-lg p-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Project Inquiry" type="text" />
+             <input
+  type="text"
+  value={contactData.subject}
+  onChange={(e) =>
+    setContactData({
+      ...contactData,
+      subject: e.target.value,
+    })
+  }
+  className="w-full bg-white/5 border border-white/10 rounded-lg p-4"
+  placeholder="Project Inquiry"
+/>
             </div>
             <div className="space-y-2">
               <label className="font-label-caps text-on-surface-variant">Message</label>
-              <textarea className="w-full bg-white/5 border border-white/10 rounded-lg p-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Tell me about your project..." rows={4} defaultValue={""} />
+             <textarea
+  rows={4}
+  value={contactData.message}
+  onChange={(e) =>
+    setContactData({
+      ...contactData,
+      message: e.target.value,
+    })
+  }
+  className="w-full bg-white/5 border border-white/10 rounded-lg p-4"
+  placeholder="Tell me about your project..."
+/>
             </div>
             <button className="w-full bg-primary text-on-primary py-4 rounded-lg font-bold hover:brightness-110 transition-all flex items-center justify-center gap-2" type="submit">
               Send Message <span className="material-symbols-outlined">send</span>
