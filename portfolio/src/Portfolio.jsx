@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from "react";
+import { FaGithub } from "react-icons/fa";
 
 function Portfolio() {
   return (
@@ -364,9 +365,15 @@ useEffect(() => {
               <a className="bg-primary/20 text-primary border border-primary/30 px-6 py-3 rounded-lg font-bold hover:bg-primary hover:text-on-primary transition-all flex items-center gap-2" href="https://ethniwear-rental-platform.vercel.app/">
                 <span className="material-symbols-outlined">launch</span> Live Demo
               </a>
-              <a className="bg-white/5 border border-white/10 px-6 py-3 rounded-lg font-bold hover:bg-white/10 transition-all flex items-center gap-2" href="https://github.com/divyani-joshi/ethniwear-rental-platform.git">
-                <span className="material-symbols-outlined">git</span> Github
-              </a>
+             <a
+  className="bg-white/5 border border-white/10 px-6 py-3 rounded-lg font-bold hover:bg-white/10 transition-all flex items-center gap-2"
+  href="https://github.com/divyani-joshi/ethniwear-rental-platform.git"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <FaGithub className="text-xl" />
+  Github
+</a>
             </div>
           </div>
         </div>
@@ -382,8 +389,9 @@ useEffect(() => {
               <a className="bg-primary/20 text-primary border border-primary/30 px-6 py-3 rounded-lg font-bold hover:bg-primary hover:text-on-primary transition-all flex items-center gap-2" href="https://hir-atelier.vercel.app/">
                 <span className="material-symbols-outlined">launch</span> Live Demo
               </a>
-              <a className="bg-white/5 border border-white/10 px-6 py-3 rounded-lg font-bold hover:bg-white/10 transition-all flex items-center gap-2" href="https://github.com/divyani-joshi/hir_atelier.git">
-                <span className="material-symbols-outlined">git</span> Github
+              <a className="bg-white/5 border border-white/10 px-6 py-3 rounded-lg font-bold hover:bg-white/10 transition-all flex items-center gap-2" href="https://github.com/divyani-joshi/hir_atelier.git" target="_blank"
+  rel="noopener noreferrer">
+                <FaGithub className="text-xl" /> Github
               </a>
             </div>
           </div>
