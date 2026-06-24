@@ -532,7 +532,7 @@ useEffect(() => {
           <p className="font-body-lg text-body-lg text-on-surface-variant">
             I'm currently available for freelance opportunities and long-term collaborations. If you have a project in mind or just want to say hi, feel free to reach out!
           </p>
-          <div className="space-y-6 pt-4">
+          <div className="space-y-6 pt-2">
             <a className="flex items-center gap-4 group" href="divyanijoshi577@gmail.com">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined">mail</span>
