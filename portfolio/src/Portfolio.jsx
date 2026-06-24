@@ -135,7 +135,7 @@ useEffect(() => {
   }}
   className="font-bold text-5xl md:text-5xl"
 >
-  Divyani Joshi
+  DJ
 </a>
       <div className="hidden md:flex items-center gap-8">
         <a className="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md transition-all" href="#home">Home</a>
