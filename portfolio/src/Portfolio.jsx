@@ -539,9 +539,7 @@ useEffect(() => {
               </div>
               <span className="font-body-lg text-body-lg">divyanijoshi577@gmail.com</span>
             </a>
-            <a className="flex items-center gap-4 group" href="www.linkedin.com/in/divyani-joshi-dev
-
-">
+            <a className="flex items-center gap-4 group" href="www.linkedin.com/in/divyani-joshi-dev">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
                 <span className="material-symbols-outlined">link</span>
               </div>
@@ -553,6 +551,13 @@ useEffect(() => {
               </div>
               <span className="font-body-lg text-body-lg">Ahmedabad, Gujarat</span>
             </div>
+              <div className="flex items-center gap-4 group">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                <span className="material-symbols-outlined">phone</span>
+              </div>
+              <span className="font-body-lg text-body-lg">+91 8320332732</span>
+            </div>
+            
           </div>
         </div>
         <div className="glass-card p-8 rounded-3xl">
