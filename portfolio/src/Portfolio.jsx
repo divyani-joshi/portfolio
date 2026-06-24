@@ -126,8 +126,8 @@ useEffect(() => {
   {/* Navigation */}
   <nav className="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-white/10 shadow-[0_0_20px_rgba(6,182,212,0.1)] h-20 transition-all duration-200 cubic-bezier(0.4,0,0.2,1)">
     <div className="flex justify-between items-center max-w-container-max mx-auto px-gutter h-full">
-    <a
-  href="#"
+    <span
+  
   style={{
     background: "linear-gradient(90deg, #4cd7f6, #ddb7ff)",
     WebkitBackgroundClip: "text",
@@ -135,8 +135,8 @@ useEffect(() => {
   }}
   className="font-bold text-5xl md:text-5xl"
 >
-  DJ
-</a>
+    &lt;DJ /&gt;
+</span>
       <div className="hidden md:flex items-center gap-8">
         <a className="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md transition-all" href="#home">Home</a>
         <a className="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md" href="#about">About</a>
