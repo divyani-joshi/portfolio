@@ -717,11 +717,34 @@ useEffect(() => {
         <a className="font-display-lg text-display-lg text-primary block mb-2" href="#">Divyani Joshi</a>
         <p className="text-on-surface-variant font-body-md text-body-md">© 2026 Divyani Joshi. Built with precision.</p>
       </div>
-      <div className="flex flex-wrap justify-center gap-8 text-on-surface-variant font-body-md text-body-md">
-        <a className="hover:text-primary transition-colors" href="#">GitHub</a>
-        <a className="hover:text-primary transition-colors" href="#">LinkedIn</a>
-        <a className="hover:text-primary transition-colors" href="mailto:hello@divyanijoshi.dev">Email</a>
-      </div>
+     <div className="flex flex-wrap justify-center gap-8 text-on-surface-variant font-body-md text-body-md">
+
+  <a
+    className="hover:text-primary transition-colors"
+    href="https://github.com/divyani-joshi"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    GitHub
+  </a>
+
+  <a
+    className="hover:text-primary transition-colors"
+    href="https://www.linkedin.com/in/divyani-joshi-dev"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    LinkedIn
+  </a>
+
+  <a
+    className="hover:text-primary transition-colors"
+    href="mailto:divyanijoshi577@gmail.com"
+  >
+    Email
+  </a>
+
+</div>
     <button
   className="mt-8 md:mt-0 w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-primary hover:bg-primary/10 transition-all"
   onClick={() =>
