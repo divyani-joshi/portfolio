@@ -149,7 +149,7 @@ useEffect(() => {
         </a>
       </div>
       {/* Mobile Menu Toggle */}
-      <button className="md:hidden text-primary">
+      <button className="text-primary">
         <span className="material-symbols-outlined">menu</span>
       </button>
     </div>
