@@ -540,33 +540,65 @@ useEffect(() => {
           <p className="font-body-lg text-body-lg text-on-surface-variant">
             I'm currently available for freelance opportunities and long-term collaborations. If you have a project in mind or just want to say hi, feel free to reach out!
           </p>
-          <div className="space-y-6 pt-2">
-            <a className="flex items-center gap-4 group" href="divyanijoshi577@gmail.com">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-                <span className="material-symbols-outlined">mail</span>
-              </div>
-              <span className="font-body-lg text-body-lg">divyanijoshi577@gmail.com</span>
-            </a>
-            <a className="flex items-center gap-4 group" href="www.linkedin.com/in/divyani-joshi-dev">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-                <span className="material-symbols-outlined">link</span>
-              </div>
-              <span className="font-body-lg text-body-lg">linkedin.com/in/divyani-joshi-dev</span>
-            </a>
-            <div className="flex items-center gap-4 group">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-                <span className="material-symbols-outlined">location_on</span>
-              </div>
-              <span className="font-body-lg text-body-lg">Ahmedabad, Gujarat</span>
-            </div>
-              <div className="flex items-center gap-4 group">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-                <span className="material-symbols-outlined">phone</span>
-              </div>
-              <span className="font-body-lg text-body-lg">+91 8320332732</span>
-            </div>
-            
-          </div>
+         <div className="space-y-6 pt-2">
+
+  {/* Email */}
+  <a
+    className="flex items-center gap-4 group"
+    href="mailto:divyanijoshi577@gmail.com"
+  >
+    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+      <span className="material-symbols-outlined">mail</span>
+    </div>
+    <span className="font-body-lg text-body-lg">
+      divyanijoshi577@gmail.com
+    </span>
+  </a>
+
+  {/* LinkedIn */}
+  <a
+    className="flex items-center gap-4 group"
+    href="https://www.linkedin.com/in/divyani-joshi-dev"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+      <span className="material-symbols-outlined">link</span>
+    </div>
+    <span className="font-body-lg text-body-lg">
+      linkedin.com/in/divyani-joshi-dev
+    </span>
+  </a>
+
+  {/* Location */}
+  <a
+    className="flex items-center gap-4 group"
+    href="https://maps.google.com/?q=Ahmedabad,Gujarat"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+      <span className="material-symbols-outlined">location_on</span>
+    </div>
+    <span className="font-body-lg text-body-lg">
+      Ahmedabad, Gujarat
+    </span>
+  </a>
+
+  {/* Phone */}
+  <a
+    className="flex items-center gap-4 group"
+    href="tel:+918320332732"
+  >
+    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+      <span className="material-symbols-outlined">phone</span>
+    </div>
+    <span className="font-body-lg text-body-lg">
+      +91 8320332732
+    </span>
+  </a>
+
+</div>
         </div>
         <div className="glass-card p-8 rounded-3xl">
           <form className="space-y-6">
