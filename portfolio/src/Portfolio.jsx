@@ -42,7 +42,7 @@ const handleStarClick = (value) => {
 const GetFeedbacks = async () => {
   try {
     let response = await fetch(
-      "http://localhost:8000/getfeedback"
+      "https://portfolio-ga6t.onrender.com/getfeedback"
     );
 
     let data = await response.json();
@@ -64,7 +64,7 @@ const AddFeedback = async (e) => {
 
   try {
     let res = await fetch(
-      "http://localhost:8000/addfeedback",
+      "https://portfolio-ga6t.onrender.com/addfeedback",
       {
         method: "POST",
         headers: {
