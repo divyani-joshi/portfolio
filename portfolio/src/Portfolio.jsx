@@ -25,6 +25,7 @@ const [isDeleting, setIsDeleting] = useState(false);
 const [showFeedbackForm, setShowFeedbackForm] = useState(false);
 const [feedbacks, setFeedbacks] = useState([]);
 const [rating, setRating] = useState(0);
+const [mobileMenu, setMobileMenu] = useState(false);
 
 
 const [formData, setFormData] = useState({
@@ -149,9 +150,50 @@ useEffect(() => {
         </a>
       </div>
       {/* Mobile Menu Toggle */}
-      <button className="text-primary">
-        <span className="material-symbols-outlined">menu</span>
-      </button>
+     <button
+  className="md:hidden text-primary"
+  onClick={() => setMobileMenu(!mobileMenu)}
+>
+  <span className="material-symbols-outlined">
+    {mobileMenu ? "close" : "menu"}
+  </span>
+</button>
+{mobileMenu && (
+  <div className="md:hidden absolute top-20 left-0 w-full bg-surface border-t border-white/10 z-50">
+    <div className="flex flex-col items-center py-6 gap-6">
+
+      <a href="#home" onClick={() => setMobileMenu(false)}>
+        Home
+      </a>
+
+      <a href="#about" onClick={() => setMobileMenu(false)}>
+        About
+      </a>
+
+      <a href="#projects" onClick={() => setMobileMenu(false)}>
+        Projects
+      </a>
+
+      <a href="#experience" onClick={() => setMobileMenu(false)}>
+        Experience
+      </a>
+
+      <a href="#contact" onClick={() => setMobileMenu(false)}>
+        Contact
+      </a>
+
+      <a
+        href="/resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-primary text-on-primary px-6 py-3 rounded-full"
+      >
+        Resume
+      </a>
+
+    </div>
+  </div>
+)}
     </div>
   </nav>
   {/* Hero Section */}
