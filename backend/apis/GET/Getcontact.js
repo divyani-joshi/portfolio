@@ -1,4 +1,4 @@
-const connectDB = require("../../db/dbconnnect");
+const connectDB = require("../../db/dbconnect");
 
 let GetContacts = async (req, res) => {
   try {
